@@ -1,5 +1,0 @@
-### Deployment files ###
-/k8s/deployments/*.yaml
-/k8s/deployments/*.yml
-/k8s/services/*.yml
-/k8s/services/*.yaml

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-nodejs-deployment
+  labels:
+    app: api-nodejs
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: api-nodejs
+  template:
+    metadata:
+      labels:
+        app: api-nodejs
+    spec:
+      containers:
+      - name: microservice-api-nodejs
+        image: your-username/microservice-js-api:1.0
+        ports:
+        - containerPort: 3000
